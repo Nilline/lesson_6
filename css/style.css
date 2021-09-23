@@ -1,0 +1,294 @@
+/* ===Подключаем шрифты==================================================================================================================================================== */
+
+/* &display=swap&subset=cyrillic-ext */
+
+@font-face {
+	font-family: "Raleway";
+	src: url("../fonts/") format("woff2"), url("../fonts/Raleway-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Raleway";
+	src: url("../fonts/Raleway-Medium.woff2") format("woff2"), url("../fonts/Raleway-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* -----Normalize------------------------------------------------------------------------------------- */
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+img {
+	vertical-align: top;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	font-size: 16px;
+}
+body {
+	font-family: "exo 2", sans-serif;
+	line-height: 1;
+	background-color: #e5e5e5;
+	color: #27282E;
+}
+
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+}
+
+/* -----Main-CSS------------------------------------------------------------------------------------- */
+._container {
+	max-width: 1260px;
+	margin: 0px auto;
+}
+._title {
+	font-size: 32px;
+	font-weight: 700;
+	text-shadow: 1px 1px 5px rgba(68, 73, 100, 0.5);
+}
+/* ======= HEADER ============================================================================ */
+.header {
+	font-size: 40px;
+	padding: 20px 0;
+	margin: 0px 0px 20px 0px;
+}
+/* ======== PAGE =========================================================================== */
+.page {
+}
+.page__container {
+}
+.page__block {
+}
+/* =================================================================================== */
+.block-page {
+	margin: 0px 0px 40px 0px;
+}
+.block-page__content {
+	display: inline-block;
+	padding: 30px;
+	background-color: #942323;
+	border-radius: 5px 80px 10px;
+}
+.block-page__image {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+}
+.block-page__text {
+	border-left: 3px solid #ff0000;
+	font-family: "Raleway", sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 115%;
+	color: rgb(45, 101, 138);
+	padding: 0px 0px 0px 10px;
+}
+.block-page__text p {
+	text-indent: 15px;
+	margin: 0px 0px 10px 0px;
+	border: 2px dotted;
+	border-bottom: 2px solid;
+	border-radius: 5px;
+	border-top: none;
+	padding: 5px;
+	box-shadow: 0px -1px 4px 0px #000;
+}
+.block-page__text span {
+	line-height: 140%;
+	opacity: 0.7;
+	border-bottom: 2px dashed;
+}
+.block-page__items {
+}
+.block-page__item-one,
+.block-page__item-two,
+.block-page__item-three {
+	vertical-align: middle;
+	display: inline-block;
+}
+.block-page__item-one {
+	background-color: #008000;
+	color: #fff;
+	font-size: 20px;
+	padding: 50px;
+	border-radius: 50% 0px;
+	border-top: 4px solid #000;
+	border-left: 1px solid #000;
+	box-shadow: 1px 1px 5px 0px #008000, -1px -1px 7px 1px #000, inset 8px 8px 15px 5px rgba(255, 0, 0, 0.4);
+	margin: 0px 30px 0px 0px;
+}
+.block-page__item-one span {
+	text-decoration: line-through;
+	text-decoration-color: red;
+}
+.block-page__item-two {
+	background-color: #00cbf8;
+	color: #000;
+	outline: 3px solid #1eff00;
+	padding: 20px 30px;
+	border-radius: 30px 30px 0px 0px;
+	border: 5px double #000;
+	margin: 0px 30px 0px 0px;
+	text-transform: uppercase;
+}
+.block-page__item-two span {
+	opacity: 0.3;
+}
+.block-page__item-three {
+	max-width: 300px;
+	max-height: 200px;
+	overflow: auto;
+	background-color: #f1f1f1;
+	padding: 10px 5px;
+	font-size: 15px;
+	line-height: 120%;
+	border: 2px dotted #008000;
+	box-shadow: inset 0px 0px 20px 5px rgba(255, 0, 0, 0.2), 0px 0px 5px 3px rgba(0,0,0,0.5);
+}
+/* =================================================================================== */
+.block-page__title {
+	text-align: center;
+	margin: 0px 0px 20px 0px;
+}
+.block-page__body {
+	box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.7);
+}
+.block-page__body span {
+	line-height: 170%;
+}
+
+.block-page__span-one {
+	outline: 2px dashed #ff0000;
+}
+.block-page__span-two {
+	background-color: #008000;
+	opacity: 0;
+	visibility: hidden;
+}
+.block-page__body:hover .block-page__span-two{
+	opacity: 1;
+	visibility: visible;
+}
+.block-page__span-three {
+	border: 3px solid #008000;
+}
+/* ====== FOOTER ============================================================================= */
+.footer {
+}
+.footer__container {
+}
+.footer__block {
+	margin: 0px 0px 40px 0px;
+}
+.block-footer {
+}
+.block-footer__header {
+	text-align: center;
+	margin: 0px 0px 30px 0px;
+}
+.block-footer__title {
+}
+.block-footer__body {
+	border: 1px solid #27282E;
+	box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+	padding: 10px;
+}
+.block-footer__exercise {
+	font-size: 20px;
+	font-weight: 600;
+	margin: 0px 0px 20px 0px;
+}
+.block-footer__circle {
+	width: 200px;
+	height: 200px;
+	background-color: rgba(233, 43, 0, 0.6);
+	border: 2px dotted #000;
+	border-radius: 50%;
+}
+.block-footer__two {
+	background-color: #ffa500;
+}
+.block-footer__paragraph {
+	margin: 0px 0px 10px 0px;
+	opacity: 0.5;
+}
+.block-footer__three span{
+	display: inline-block;
+	max-height: 150px;
+	overflow: auto;
+	border: 2px solid #27282E;
+	padding: 5px;
+}
+.block-footer__four {
+	background-color: rgba(68, 0, 255, 0.4);
+	padding: 20px;
+	font-size: 0;
+	border-left: 2px solid #ff0000;
+	border-top: 5px dashed #008000;
+	border-bottom: 8px dotted #ffff00;
+	border-right: 10px double #961e96;
+}
+.block-footer__four p,
+.block-footer__link {
+	font-family: "Raleway", sans-serif;
+}
+.block-footer__four p {
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 120%;
+	display: inline-block;
+	width: 25%;
+	vertical-align: top;
+	background-color: #fff;
+	max-height: 200px;
+	overflow: auto;
+	padding: 10px;
+}
+.block-footer__five {
+}
+.block-footer__link {
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 700;
+	background-color: rgba(0, 0, 255, 0.7);
+	border-radius: 30px;
+	padding: 0 23px;
+	line-height: 50px;
+	color: #fff;
+	box-shadow: 1px 4px 2px 2px rgba(0, 0, 0, 0.733);
+}
